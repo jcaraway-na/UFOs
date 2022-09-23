@@ -13,6 +13,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/color.css">
+    <link rel="stylesheet" href="static/css/tables.css">
 </head>
 
 <body class="bg-dark">
@@ -38,44 +40,42 @@
           <br></br>
           <div class="container-fluid">
             <div class="row">
-              <div class="col-md-3">
+              <div class="col-md-3 panels">
                 <!-- data filter starts here -->
-                <form class="rounded bg-dark">
+                <form class="">
                   <p>Filter Search</p>
                   <ul class="bg-dark list-group">
-                      <!-- CHALLENGE NEED - Filter Using New <form> Tag-->
+                      <!-- Filter 1-->
                         <li class="list-group" class="btn-dark">
                           <label for="datetime">Enter Date</label>
                           <input type="text" placeholder="1/10/2010" id="datetime" />
                       </li>
-
+                      <!-- Filter 2-->
                       <li class="list-group" class="btn-dark">
                         <label for="city">Enter City</label>
                         <input type="text" placeholder="benton" id="city">
                       </li>
-
+                      <!-- Filter 3-->
                       <li class="list-group" class="btn-dark">
                         <label for="state">Enter State</label>
                         <input type="text" placeholder="ar" id="state">
                       </li>
-
+                      <!-- Filter 4-->
                       <li class="list-group" class="btn-dark">
                         <label for="country">Enter Country</label>
                         <input type="text" placeholder="us" id="country">
                       </li>
-
+                      <!-- Filter 5-->
                       <li class="list-group" class="btn-dark">
                         <label for="shape">Enter Shape</label>
                         <input type="text" placeholder="circle" id="shape">
                       </li>
-                      <br></br>
-
-                   <button id="filter-btn" type="button" class="rounded btn btn-primary btn btn-default">Filter Table</button>
+                   <button id="filter-btn" type="button" class="rounded btn btn-secondary btn btn-default">Filter Table</button>
                   </ul>
                 </form>
               </div>
-              <div class="col-md-9">
-                <table class="table table-striped">
+              <div style="overflow: scroll;" class="col panels">
+                <table  class="table table-condensed">
                   <thead>
                     <tr>
                       <th>Date</th>
